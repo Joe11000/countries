@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+	attr_accessible :name_first, :name_last
+
 	has_one  :country, dependent: :destroy
 	has_many :messages, dependent: :destroy
 

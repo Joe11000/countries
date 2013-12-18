@@ -1,5 +1,22 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "has a valid factory" do
+  	FactoryGirl.create(:user).is_valid?
+  end
+
+
 end
+
+
+	# attr_accessible :name_first, :name_last
+
+	# has_one  :country, dependent: :destroy
+	# has_many :messages, dependent: :destroy
+
+	# validates :name_first,            presence: true
+	# validates :name_last,             presence: true
+	# validates :password,              presence: true
+	# validates :password_confirmation, presence: true
+
+	# has_secure_password
