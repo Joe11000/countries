@@ -2,5 +2,9 @@
 
 FactoryGirl.define do
   factory :user do
+  	name_first              "joe"
+	  name_last               "joe"
+	  password                "joe"
+	  password_confirmation   "joe"
   end
 end
