@@ -14,11 +14,18 @@
 ActiveRecord::Schema.define(version: 20131217234251) do
 
   create_table "countries", force: true do |t|
+    t.integer  "ruler_id"
+    t.string   "name"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "messages", force: true do |t|
+    t.integer  "from_id_id"
+    t.integer  "to_id_id"
+    t.string   "body"
+    t.string   "subject"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
