@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20131217234251) do
   end
 
   create_table "messages", force: true do |t|
-    t.integer  "from_id_id"
-    t.integer  "to_id_id"
+    t.integer  "sent_id"
+    t.integer  "received_id"
     t.string   "body"
     t.string   "subject"
     t.datetime "created_at"

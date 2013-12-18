@@ -1,8 +1,8 @@
 class CreateMessages < ActiveRecord::Migration
   def change
     create_table :messages do |t|
-    	t.belongs_to :from_id
-    	t.belongs_to :to_id
+    	t.belongs_to :sent
+    	t.belongs_to :received
     	t.string     :body
     	t.string     :subject
 
