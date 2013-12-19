@@ -3,8 +3,8 @@
 FactoryGirl.define do
   factory :user, aliases: [:ruler] do
   	name_first              "joe"
-	  name_last               "joe"
-	  password                "joe"
-	  password_confirmation   "joe"
+	name_last               "joe"
+	password                "joe"
+	password_confirmation   "joe"
   end
 end

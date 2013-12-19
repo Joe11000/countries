@@ -2,8 +2,8 @@ class User < ActiveRecord::Base
 	attr_accessible :name_first, :name_last
 
 	has_one  :country, dependent:   :destroy,
-	                   foreign_key: :ruler,
-                       inverse_of:  :ruler
+	                   foreign_key: 'ruler_id' 
+	                   #,inverse_of:  :ruler
 
 	validates :name_first,            presence: true
 	validates :name_last,             presence: true

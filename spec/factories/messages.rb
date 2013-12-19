@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :message do
   	body		 "body"
-  	subject  "sub"
+  	subject      "sub"
   end
 end

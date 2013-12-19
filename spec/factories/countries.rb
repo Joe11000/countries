@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :country do
-  	ruler
-  	name     "Joemany"
-  	location "here"
+  	# ruler
+  	sequence(:name) {|n| "country#{n}"}
+  	sequence(:location) {|l| "spot#{l}"}
   end
 end
