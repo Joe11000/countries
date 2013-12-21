@@ -3,7 +3,6 @@ class UsersController < ApplicationController
 	
   def new
   	@locationX =  -34.397
-  	@locationY =  150.644 
-
+  	@locationY =  50.644 
   end
 end
