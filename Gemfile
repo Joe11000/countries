@@ -65,11 +65,10 @@ group :test do
 end
 
 group :production do
-gem 'rails_12factor'  # heroku deployment needs this
-gem 'thin'
-gem 'sprockets-rails' # automatically compile your assests for you don't have to.
+  gem 'rails_12factor'  # heroku deployment needs this
+  gem 'thin'
+  gem 'sprockets-rails' # automatically compile your assests for you don't have to.
 end
 
 gem 'jquery-ui-rails'
 gem 'cancan'
-

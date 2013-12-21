@@ -4,6 +4,9 @@ class Ability
   def initialize(current_user)
 
     if current_user
+        # can [ :manage ], Country, id: current_user.country.id
+        # can [ :manage ], User
+        # can [ :manage ], Message
 
     end
     # Define abilities for the passed in user here. For example:
