@@ -77,4 +77,6 @@ CarrierWaveExample::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  GOOGLE_MAPS_API_KEY = 'AIzaSyD3YuRXOj-AwD6kvTHi1YOWgaiORF1a6Nc'
 end
