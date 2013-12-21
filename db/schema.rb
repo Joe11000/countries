@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131217234251) do
+ActiveRecord::Schema.define(version: 20131221013905) do
 
   create_table "countries", force: true do |t|
     t.integer  "ruler_id"
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20131217234251) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "locationX"
+    t.decimal  "locationY"
   end
 
 end

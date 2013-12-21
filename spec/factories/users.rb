@@ -6,5 +6,7 @@ FactoryGirl.define do
 	name_last               "joe"
 	password                "joe"
 	password_confirmation   "joe"
+	locationX               -34.397
+	locationY               150.644
   end
 end

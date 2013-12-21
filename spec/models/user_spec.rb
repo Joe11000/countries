@@ -15,12 +15,16 @@ describe User do
     it { should allow_mass_assignment_of(:name_last) }
 
   	it { should validate_presence_of(:name_first) }
-  	it { should validate_presence_of(:name_last) }
+    it { should validate_presence_of(:name_last) }
+    it { should validate_presence_of(:locationX) }
+  	it { should validate_presence_of(:locationY) }
+
     it { should validate_presence_of(:password) }
     it { should validate_presence_of(:password_confirmation) }
 
   	it { should have_secure_password }
 
   	it { should have_one(:country).dependent(:destroy)  }
+
 	end
 end
